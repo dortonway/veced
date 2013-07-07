@@ -1,0 +1,143 @@
+﻿<head>
+<meta charset = 'utf-8'>
+<link href = 'all.css' rel = 'stylesheet'>
+</head>
+<body>
+<div id = 'menu'>
+	<span id = 'file'>File</span>
+	<span id = 'do'>Actions</span>
+	<span id = 'print'>Print</span>
+	<span id = 'exit'>Exit</span>
+</div>
+<div id = 'variability'>
+	<div id = 'content'>
+		<svg id = 'linen'></svg>
+	</div>
+	<div id = 'menu_block'>
+		<div id = 'creation' class = 'menu_blocks'>
+			<div id = 'verteces_block'>
+				<div class = 'header' id = 'vertices'>Vertices</div>
+				<table class = 'verteces' border = 0>
+					<tr>
+						<td class = 'dark'>#
+						</td>
+						<td class = 'dark'>X
+						</td>
+						<td class = 'dark'>Y
+						</td>
+						<td class = 'dark'>Z
+						</td>
+					</tr>
+				</table>
+				<div class = 'scroll'>
+					<table class = 'verteces' border = 0>
+					</table>
+				</div>
+				<div id = 'inputs'>
+					<input class = 'coordinates' id = 'x' placeholder = 'X' type = 'text'>
+					<input class = 'coordinates' id = 'y' placeholder = 'Y' type = 'text'>
+					<input class = 'coordinates' id = 'z' placeholder = 'Z' type = 'text'>
+				</div>
+				<input class = 'buttons' id = 'add' value = 'Add' type = 'button'><br>
+				<input class = 'buttons' id = 'edit' value = 'Edit' type = 'button'><br>
+				<input class = 'buttons' id = 'remove' value = 'Remove' type = 'button'>
+			</div>
+			<div id = 'ribs_block'>
+				<div class = 'header' id = 'ribs'>Ribs</div>
+				<table class = 'verteces' border = 0>
+					<tr>
+						<td class = 'dark'>#
+						</td>
+						<td class = 'dark'>beginning
+						</td>
+						<td class = 'dark'>ending
+						</td>
+					</tr>
+				</table>
+				<div class = 'scroll'>
+					<table class = 'ribs' border = 0>
+						<tr>
+							<td class = 'dark'>1
+							</td>
+							<td>1
+							</td>
+							<td>2
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id = 'inputs'>
+					<input class = 'coordinates' id = 'begin' placeholder = 'beginning' type = 'text'>
+					<input class = 'coordinates' id = 'end' placeholder = 'ending' type = 'text'>
+
+					<input class = 'buttons' id = 'add' value = 'Add' type = 'button'><br>
+					<input class = 'buttons' id = 'edit' value = 'Edit' type = 'button'><br>
+					<input class = 'buttons' id = 'remove' value = 'Remove' type = 'button'>
+				</div>
+			</div>
+
+			<div>
+				<div class = 'header' id = 'vertices'>Common</div>
+				<input class = 'buttons'id = 'draw' type = 'button' value = 'Draw'>
+			</div>
+		</div>
+
+		<div id = 'file' class = 'menu_blocks'>
+			<div class = 'header'>File</div>
+
+			<input value = 'New' type = 'button' class = 'menu_buttons' id = 'create'><br>
+			<input value = 'Open' type = 'file' size = '1' class = 'menu_buttons' id = 'open'><br>
+			<a download = 'vectorjs.json' id = 'save_lnk'><input value = 'Save' type = 'button' class = 'menu_buttons' id = 'save'></a><br>
+			<a download = 'vectorjs.svg' id = 'export_lnk'><input value = 'Export to SVG' type = 'button' class = 'menu_buttons' id = 'export'></a><br>
+			<!--<input value = 'Сохранить как' type = 'button' class = 'menu_buttons' id = 'save as'><br>-->
+			<input value = 'Edit' type = 'button' class = 'menu_buttons' id = 'edit'>
+		</div>
+
+		<div id = 'do' class = 'menu_blocks'>
+			<div class = 'header'>Actions</div>
+
+			<input name = 'do' id = 'shift' type = 'radio'>Shift<br>
+			<input name = 'do' id = 'scale' type = 'radio'>Scale<br>
+			<input name = 'do' id = 'turning' type = 'radio'>Turning<br><br>
+
+			<input name = 'method' id = 'rough_btn' value = 'rough' type = 'radio'>Rough<br>
+			<input name = 'method' id = 'exactly_btn' value = 'exactly' type = 'radio'>Exactly<br>
+
+			<div id = 'rough' class = 'hide'>
+				<div class = 'header_2'>Rough</div>
+				<input name = 'axis' id = 'xxx' type = 'checkbox'>X
+				<input name = 'axis' id = 'yyy' type = 'checkbox'>Y
+				<input name = 'axis' id = 'zzz' type = 'checkbox'>Z<br>
+
+				<input id = 'less' class = 'rough' value = '<' type = 'button'>
+				<input id = 'rough_value' class = 'rough' value = '0' type = 'text'>
+				<input id = 'more' class = 'rough' value = '>' type = 'button'>
+			</div>
+			<div id = 'exactly' class = 'hide'>
+				<div class = 'header_2'>Exactly</div>
+				<input class = 'exactly' id = 'x_exactly_vl' value = '0' type = 'text'><input name = 'axis' id = 'x_exactly_cb' type = 'checkbox'>X<br>
+				<input class = 'exactly' id = 'y_exactly_vl' value = '0' type = 'text'><input name = 'axis' id = 'y_exactly_cb' type = 'checkbox'>Y<br>
+				<input class = 'exactly' id = 'z_exactly_vl' value = '0' type = 'text'><input name = 'axis' id = 'z_exactly_cb' type = 'checkbox'>Z<br>
+				<input id = 'exactly_do' value = 'Свершить деяние' type = 'button'>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div id = 'statusbar'></div>
+
+<div id = 'question'>
+	Are you sure that you want to exit?<br>
+	<input class = 'buttons' value = 'Yes' type = 'button'>
+	<input class = 'buttons' value = 'No' type = 'button'>
+</div>
+
+<div id = 'question_save'>
+	Save changes?<br>
+	<input class = 'buttons' value = 'Yes' type = 'button'>
+	<input class = 'buttons' value = 'No' type = 'button'>
+</div>
+
+<script src = 'Chart.js'></script>
+<script src = 'main.js'></script>
+</body>

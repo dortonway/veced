@@ -1,0 +1,138 @@
+body {
+	margin: 0px;
+}
+
+.verteces input {
+	width: 45px
+}
+
+.ribs input {
+	width: 65px
+}
+
+#menu {
+	padding: 2px;
+	//border-bottom: 1px #DDD solid;
+	//background-color: red;
+}
+
+#variability {
+	width: 100%;
+}
+
+#content {
+	float: left;
+	width: calc(100% - 200px);
+	//background-color: green;
+}
+
+#menu_block {
+	float: right;
+	width: 200px;
+	//height: 300px;
+	//background-color: red;
+}
+
+#statusbar {
+	bottom: 0px;
+	position: absolute;
+	padding: 5px;
+}
+
+.verteces {
+	border: 1px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.dark {
+	background-color: #EEE;
+}
+
+.coordinates {
+	width: 50px;
+}
+
+#inputs {
+	//text-align: center;
+}
+
+.buttons {
+	width: 110px;
+}
+
+.rough {
+	width: 50px;
+}
+
+.exactly {
+	width: 60px;
+}
+
+.menu_buttons {
+	width: 90%;
+	//height: 25px;
+	margin: 5px;
+}
+
+.header {
+	margin: 18px 5px 5px 5px;
+	font-size: 14pt;
+}
+
+.header_2 {
+	margin: 18px 5px 5px 5px;
+}
+
+#menu_block .menu_blocks {
+	display: none;
+	padding: 0px 10px 0px 0px;
+}
+
+#question {
+	display: none;
+	position: fixed;
+	left: calc(50% - 100px);
+	top: 200px;
+	z-index: 100;
+	background-color: #FFF;
+}
+
+#question_save {
+	display: none;
+	position: fixed;
+	left: calc(50% - 100px);
+	top: 200px;
+	z-index: 100;
+	background-color: #FFF;
+}
+
+.hide {
+	display: none;
+}
+
+.scroll {
+	overflow-y: auto;
+	height: 100px;
+	border: 1px solid black;
+}
+
+.msg {
+	position: absolute;
+	top: 40px;
+	border-radius: 10px;
+	padding: 3px 8px 3px 8px;
+	opacity: 0.7;
+	/* background-color: #fff;
+	-webkit-animation: appearance 1s; */
+}
+
+#linen {
+	height: 620px;
+}
+
+/*@-webkit-keyframes appearance
+{
+	from {background: #fff;}
+	to {background: #eaffe9;}
+}*/
